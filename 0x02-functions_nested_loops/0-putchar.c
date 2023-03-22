@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/* function main witten by Mo Ala*/
+/**
+	 * main - print _putchar
+	 * is written by Mo Alaa
+	 * Return: 0
+	 */
 
 
 int main(void)
