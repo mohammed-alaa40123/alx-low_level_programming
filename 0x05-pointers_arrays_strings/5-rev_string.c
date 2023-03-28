@@ -5,21 +5,19 @@
    * 
    * @s: string var pointer 
    */
-   void rev_string(char *s) 
-  {
-     int i, j, temp;
-       i= 0;
-       j= 0;
+  void rev_string(char *s)
+	{
+		char rev = s[0];
+		int counter = 0;
+		int i;
 
-     while (s[i] != '\0' ) 
-     {
-            j++;
-} 
-       j--;
-       while (j>i) 
-{
-     temp = s[j];
-     s[j--] = s[i];
-     s[i++] = temp;
-} 
-    } 
+		while (s[counter] != '\0')
+		counter++;
+		for (i = 0; i < counter; i++)
+		{
+			counter--;
+			rev = s[i];
+			s[i] = s[counter];
+			s[counter] = rev;
+		}
+	}
