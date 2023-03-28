@@ -1,5 +1,6 @@
 #include "holberton.h"
-
+#include<malloc.h>
+#include<string.h>
 /**
   * rev_string - Reverses a string
   * @s: The string to be modified
@@ -14,16 +15,13 @@ void rev_string(char *s)
 		c++;
 	}
 
-	char rev[c];
+    char* rev =(char*) malloc(c);
+	strcpy(rev,s);
 	int k = 0;
-
-	for (int i = c-1; i >=0; i--)
+	int i =0;
+	for (i = c-1; i >=0; i--)
 	{
-		rev[k++] = s[i];
-	}
-    for (int i = 0; i <=c; i++)
-	{
-		s[i] = rev[i];
+		s[k++] = rev[i];
 	}
     s[c+1]='\0';
 }
