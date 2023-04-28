@@ -1,13 +1,13 @@
 
 #include <stdlib.h>
 #include "lists.h"
-size_t list_len(const list_t *h)
+size_t list_len(const list_t *head)
 {
 	unsigned int i = 0;
 
-	while (h != NULL)
+	while (head != NULL)
 	{
-		h = h->next;
+		head = head->next;
 		i++;
 	}
 
