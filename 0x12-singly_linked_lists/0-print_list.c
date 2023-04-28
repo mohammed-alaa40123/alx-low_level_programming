@@ -1,5 +1,5 @@
-#include "lists.h"
 #include <stdio.h>
+#include "lists.h"
 /**
  * print_list - Print all the elements of a list_t list
  * @head: Const  double pointer to a structure of type list_t, which represents the beginning of a linked list.
