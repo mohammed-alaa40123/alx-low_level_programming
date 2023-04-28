@@ -1,11 +1,13 @@
 
 #include <stdio.h>
 #include "lists.h"
+
 /**
- * print_list - Print all the elements of a list_t list
- * @head: Const  double pointer to a structure of type list_t, which represents the beginning of a linked list.
- * Return: Num of nodes
- */
+* print_list - Print all the elements of a list_t list
+* @head: Const  double pointer to a structure of type list_t, which represents the beginning of a linked list.
+* Return: Num of nodes
+*/
+
 size_t print_list(const list_t *head)
 {
 	unsigned int i = 0;
